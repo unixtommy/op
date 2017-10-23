@@ -1,0 +1,1 @@
+export PROMPT_COMMAND='{ date "+%y-%m-%d %T ##### $(who am i |awk "{print \$1\" \"\$2\" \"\$5}")  #### $(whoami)  #### $(history 1 | { read x cmd; echo "$cmd"; })"; } >>$AUDIT_FILE'
